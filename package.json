@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/isel-jao/him-ui/issues"
   },
-  "homepage": "https://github.com/isel-jao/him-ui#readme"
+  "homepage": "https://github.com/isel-jao/him-ui#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
 }
