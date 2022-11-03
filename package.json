@@ -1,0 +1,25 @@
+{
+  "name": "him-ui",
+  "version": "1.0.0",
+  "description": "\"reusable style classes\"",
+  "main": "src/index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isel-jao/him-ui.git"
+  },
+  "keywords": [
+    "flex",
+    "grid",
+    "colors",
+    "text"
+  ],
+  "author": "isel-jao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isel-jao/him-ui/issues"
+  },
+  "homepage": "https://github.com/isel-jao/him-ui#readme"
+}
