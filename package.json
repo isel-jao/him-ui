@@ -14,7 +14,8 @@
     "flex",
     "grid",
     "colors",
-    "text"
+    "text",
+    "buttons"
   ],
   "author": "isel-jao",
   "license": "ISC",
