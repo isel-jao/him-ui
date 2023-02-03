@@ -15,29 +15,18 @@
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none;
-
-  &[disabled] {
-    pointer-events: none;
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    filter: grayscale(1);
-  }
 }
 
 @function get-color($colour) {
-  @if (lightness($colour) > 60) {
+  @if (lightness($colour) > 50) {
     @return map-get($colors, "dark");
   } @else {
     @return map-get($colors, "light");
   }
 }
 
-$my-colors: () !default;
-
-$colors: map-merge($default-colors, $my-colors);
-
 @each $color, $value in $colors {
-  .outlined-#{$color} {
+  .btn-outlined-#{$color} {
     outline: 1px solid $value;
     color: $value;
     &:hover {
@@ -49,7 +38,7 @@ $colors: map-merge($default-colors, $my-colors);
     }
   }
 
-  .contained-#{$color} {
+  .btn-contained-#{$color} {
     background-color: $value;
     color: get-color($value);
 
@@ -62,31 +51,7 @@ $colors: map-merge($default-colors, $my-colors);
     }
   }
 
-  .outlined-contained-#{$color} {
-    outline: 1px solid $value;
-    color: $value;
-    &:hover {
-      background-color: $value;
-      color: get-color($value);
-    }
-    &:active {
-      background-color: lighten($value, 10%);
-    }
-  }
-
-  .contained-outlined-#{$color} {
-    background-color: $value;
-    color: get-color($value);
-    &:hover {
-      background-color: transparent;
-      outline: 1px solid $value;
-      color: $value;
-    }
-    &:active {
-      background: rgba($value, 0.1);
-    }
-  }
-  .text-#{$color} {
+  .btn-text-#{$color} {
     color: $value;
 
     &:hover {
@@ -100,7 +65,7 @@ $colors: map-merge($default-colors, $my-colors);
     }
   }
 
-  .gradient-#{$color} {
+  .btn-gradient-#{$color} {
     background: linear-gradient(
       to right,
       darken($value, 10%),

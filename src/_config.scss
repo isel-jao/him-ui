@@ -49,3 +49,21 @@ $font-size: (
   7xl 3.5 6,
   8xl 4 7
 );
+
+$default-colors: (
+  primary: #269792,
+  secondary: #9c42e1,
+  success: #07d17d,
+  info: #4299e1,
+  warning: #ed8936,
+  danger: #e53e3e,
+  light: #edf2f7,
+  dark: #4a5568,
+);
+
+$colors: () !default;
+
+$colors: map-merge($default-colors, $colors);
+
+$transition-duration: 0.3s;
+$transition-timing-function: ease;

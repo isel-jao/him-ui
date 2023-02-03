@@ -1,6 +1,6 @@
 {
   "name": "him-ui",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "\"reusable style classes\"",
   "main": "src/index.scss",
   "scripts": {
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/isel-jao/him-ui#readme",
   "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
     "sass": "^1.55.0"
   }
 }
